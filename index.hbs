@@ -23,6 +23,12 @@
         </header>
 
         <p>{{excerpt}}… <a href="{{url}}" class="more">Read more</a></p>
+		<span class="post-meta">
+			<time datetime="{{date format='YYYY-MM--DD'}}">{{date format="DD MMM YYYY"}}</time> 
+			{{#if tags}}on {{tags}}{{/if}} 
+			<a href="{{url}}#disqus_thread">Comments</a>
+		</span>
+
         <footer>
             <p class="meta">
                 <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
